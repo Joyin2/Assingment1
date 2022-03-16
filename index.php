@@ -163,7 +163,7 @@ include "connection.php";
     function setpermanent_address(){
   if ($("#homepostalcheck").is(":checked")) {
     $('#permanent_address').val($('#residential_address').val());
-    $('#permanent_address').attr('disabled', 'disabled');
+    // $('#permanent_address').attr('disabled', 'disabled');
   } else {
     $('#permanent_address').removeAttr('disabled');
   }
