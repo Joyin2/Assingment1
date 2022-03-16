@@ -31,35 +31,35 @@ include "connection.php";
             <form action="" name="form1" method="POST">
                 <div class="form-group">
                     <label for="firstname">firstname:</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="Enter firstname" name="firstname">
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter firstname" name="firstname" required>
                 </div>
                 <div class="form-group">
                     <label for="lastname">lastname:</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname">
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" required>
                 </div>
                 <div class="form-group">
                     <label for="email">email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="contact">contact:</label>
-                    <input type="tel" class="form-control" id="contact" placeholder="Enter contact" name="contact">
+                    <input type="tel" class="form-control" id="contact" placeholder="Enter contact" name="contact" required>
                 </div>
                 <div class="form-group">
                     <label for="fathers_name">Fathers Name:</label>
-                    <input type="text" class="form-control" id="fathers_name" placeholder="Enter father's name" name="fathers_name">
+                    <input type="text" class="form-control" id="fathers_name" placeholder="Enter father's name" name="fathers_name" required>
                 </div>
                 <div class="form-group">
                     <label for="gender">Gender:</label>
-                    <input type="text" class="form-control" id="gender" placeholder="Enter your gender" name="gender">
+                    <input type="text" class="form-control" id="gender" placeholder="Enter your gender" name="gender" required>
                 </div>
                 <div class="form-group">
                     <label for="college_name">College Name:</label>
-                    <input type="text" class="form-control" id="college_name" placeholder="Enter college's name" name="college_name">
+                    <input type="text" class="form-control" id="college_name" placeholder="Enter college's name" name="college_name" required>
                 </div>
                 <div class="form-group">
                     <label for="residential_address">Residential Address:</label>
-                    <input type="text" class="form-control" id="residential_address" placeholder="Enter address" name="residential_address">
+                    <input type="text" class="form-control" id="residential_address" placeholder="Enter address" name="residential_address" required>
                 </div>
                 
                 <label>
@@ -69,7 +69,7 @@ include "connection.php";
                 
                 <div class="form-group">
                     <label for="permanent_address">Permanent Address:</label>
-                    <input type="text" class="form-control" id="permanent_address" placeholder="Enter permanent address" name="permanent_address">
+                    <input type="text" class="form-control" id="permanent_address" placeholder="Enter permanent address" name="permanent_address" required>
                 </div>
                 <button type="submit" name="insert" class="btn btn-default">Insert</button>
                 <!-- <button type="submit" name="update" class="btn btn-default">Update</button> -->
@@ -131,7 +131,7 @@ include "connection.php";
 
     <?php
     if (isset($_POST["insert"])) {
-        mysqli_query($link, "insert into table1 values(NULL,'$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[contact]','$_POST[fathers_name]','$_POST[gender]','$_POST[college_name]','$_POST[residential_address]','$_POST[permanent_address]')");
+        mysqli_query($link, "insert into table1 values ( NULL,'$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[contact]','$_POST[fathers_name]','$_POST[gender]','$_POST[college_name]','$_POST[residential_address]','$_POST[permanent_address]')");
         ?>
         <script type="text/javascript">
             window.location.href=window.location.href;
