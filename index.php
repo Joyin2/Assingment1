@@ -30,19 +30,19 @@ include "connection.php";
             <h2>Student Form</h2>
             <form action="" name="form1" method="POST">
                 <div class="form-group">
-                    <label for="firstname">firstname:</label>
+                    <label for="firstname">Firstname:</label>
                     <input type="text" class="form-control" id="firstname" placeholder="Enter firstname" name="firstname" required>
                 </div>
                 <div class="form-group">
-                    <label for="lastname">lastname:</label>
+                    <label for="lastname">Lastname:</label>
                     <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">email:</label>
+                    <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="contact">contact:</label>
+                    <label for="contact">Contact:</label>
                     <input type="tel" class="form-control" id="contact" placeholder="Enter contact" name="contact" required>
                 </div>
                 <div class="form-group">
